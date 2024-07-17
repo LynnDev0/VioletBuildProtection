@@ -1,0 +1,23 @@
+name: VioletBuildProtection
+version: 1.0
+main: org.undo.BuildProtectionPlugin
+api-version: 1.20
+author: VioletDev
+description: A plugin to protect build zones in Minecraft.
+
+commands:
+  bp:
+    description: Main command for BuildProtectionPlugin
+    usage: /bp <subcommand>
+    aliases: [buildprotection]
+    permission: buildprotection.use
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  buildprotection.use:
+    description: Allows the player to use the BuildProtectionPlugin commands
+    default: true
+  buildprotection.admin:
+    description: Allows the player to manage build zones
+    default: op
+
